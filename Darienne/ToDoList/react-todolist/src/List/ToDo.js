@@ -4,12 +4,12 @@ export default props => (
   <div style={{ display: "flex", justifyContent: "center" }}>
     <div
       style={{
-        textDecoration: props.todo.complete ? "line-through" : ""
+       textDecoration: props.todo.complete ? "line-through" : "" , cursor: "pointer"
       }}
       onClick={props.toggleComplete}
     >
       {props.todo.text}
     </div>
-    <button onClick={props.onDelete}>x</button>
+    <button onClick={props.onDelete}>Delete</button>
   </div>
 );
