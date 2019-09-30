@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+.list {
+  margin-bottom: 8px;
+  padding: 0px 0px 8px 0px;
+  border-bottom: solid 1px lightgray;
+  width: 230px;
+}
+.done {
+  color: #999;
+}
+.done div {
+  width: 20px;
+  height: 20px;
+  background-image: url(checkbox1.png);
+  background-size: 20px;
+  display: inline-block;
+}
+
+.undone div {
+  width: 20px;
+  height: 20px;
+  background-image: url(checkbox0.png);
+  background-size: 20px;
+  display: inline-block;
+}
+
+form {
+  margin-bottom: 24px;
+}
+form input[type="text"] {
+  width: 200px;
+  display: inline-block;
+}
+form button[type="submit"] {
+  display: inline-block;
+  vertical-align: top;
+}
