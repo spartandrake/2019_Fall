@@ -1,0 +1,94 @@
+body {
+  padding: 50px;
+  background-color: rgb(109, 36, 78);
+  font-family: sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+
+}
+
+
+.todoListMain .header input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 200px;
+  background-color: rgba(255, 170, 241, 0.856);
+  border: 1px solid rgb(143, 29, 153);
+  
+}
+
+.todoListMain .header button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: rgb(184, 0, 153);
+  color: #FFF;
+  border: 1px solid rgb(234, 0, 255);
+}
+
+.todoListMain .header button:hover {
+  background-color: #6e0065;
+  border: 1px solid #ec00cd;
+  cursor: pointer;
+}
+
+.todoListMain .theList {
+  list-style: none;
+  width: 300 px;
+}
+
+h1
+{
+  color: #FFF;
+}
+ul.theList {
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.theList li {
+  color: #333;
+  background-color: rgba(255, 101, 152, 0.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: background-color .2s ease-out;
+}
+
+.todoListMain .theList li:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+
+ ul.theList li:hover{
+	background-color: rgb(187, 50, 119);
+	color: #ffffff;
+  cursor: pointer;
+  
+ }
+  button{
+
+    background-color: rgb(250, 94, 172);
+    color: #ffffff;
+    cursor: pointer;
+    margin: 5px;
+    
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+
+ 
