@@ -1,0 +1,61 @@
+body {
+  padding: 50px;
+  background-color: rgb(109, 36, 78);
+  font-family: sans-serif;
+}
+
+#container {
+
+  
+  justify-content: center;
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+input[type=text] {
+ 
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+
+h1
+{
+  color: #FFF;
+}
+ul{
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+li{
+  color: white;
+}
+
+
+button{
+
+    background-color: rgb(250, 94, 172);
+    color: #ffffff;
+    cursor: pointer;
+    margin: 5px;
+   padding-left: 15px;
+   padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+
+ 
