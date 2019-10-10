@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+#ChannelsContainer
+{
+  float:left;
+  background: #2F3136;
+ 
+  padding-right: 15%;
+}
+
+#ChatInputContainer
+{
+  margin-bottom: 10px;
+}
+
+#MessagesContainer
+{
+  
+}
+
+#Chatters
+{
+  background: #2F3136;
+  float:right;
+}
