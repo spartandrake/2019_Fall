@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Button, Container, Input, List, Radio } from 'semantic-ui-react';
-import ChatInput from './ChatInput';
-import moment from 'moment';
+import React, { Component } from "react";
+import { Button, Container, Input, List, Radio } from "semantic-ui-react";
 
-const generalMessages =[
+import moment from "moment";
+
+const generalMessages = [
   {
     senderId: "jennym1211",
     timestamp: "Today at 12:00 AM",
@@ -20,63 +20,68 @@ const generalMessages =[
     timestamp: "Now",
     text: "I wish I understood react better!"
   }
-]
+];
 
-const resourceMessages =[
+const resourceMessages = [
   {
     sender: "afreeland",
     timestamp: "Today at 12:00 AM",
-    text: "Click on this link to learn about react hooks -> https://reactjs.org/docs/hooks-intro.html"
+    text:
+      "Click on this link to learn about react hooks -> https://reactjs.org/docs/hooks-intro.html"
   }
-]
+];
 
-const otherChannelMessages =[
-{
-
-}
-]
-
-
-
+const otherChannelMessages = [{}];
 
 class Messages extends Component {
-
-
-  addMessage(event)
-  {
+  addMessage(event) {
     event.preventDefault();
 
     this.setState({
-      generalMessages: [...this.state.generalMessages, {
-        senderId: "senderName",
-        timestamp: new Date(),
-        text: event.target.item.value
-      }]
+      generalMessages: [
+        ...this.state.generalMessages,
+        {
+          senderId: "senderName",
+          timestamp: new Date(),
+          text: event.target.item.value
+        }
+      ]
     });
 
-    event.target.item.value = '';
+    event.target.item.value = "";
   }
 
+  render() {
+    const generalMessageList = generalMessages.map(generalMessage => (
+      <li>
+        <b>{generalMessage.senderId} </b>
+        {generalMessage.timestamp}
+        <br></br>
+        <br></br>
+        {generalMessage.text}
+        <div class="ui divider"></div>
+      </li>
+    ));
+    return (
+      <div className="messageList">
+        <ul>
+          <div>{generalMessageList}</div>
+        </ul>
 
-    render() {
-      const generalMessageList = generalMessages.map((generalMessage) =>
-       <li><b>{generalMessage.senderId} </b> {generalMessage.timestamp}<br></br>
-       <br></br>
-       {generalMessage.text}<div class="ui divider"></div></li>
-);
-      return (
-       
-        <div className="messageList">
-         <ul><div>{generalMessageList}</div></ul>
-        
-         <form>
+        <form>
           <div class="ui input">
-          <input type="text" placeholder="Message {Channel Name}" name="item" className="item" /></div>
+            <input
+              type="text"
+              placeholder="Message {Channel Name}"
+              name="item"
+              className="item"
+            />
+          </div>
           <button class="ui button">Add</button>
         </form>
-        </div>
-      );
-    }
+      </div>
+    );
+  }
 }
 
 export default Messages;
