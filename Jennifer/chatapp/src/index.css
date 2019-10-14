@@ -12,3 +12,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+#ChannelsContainer
+{
+  background: #2F3136;
+  color: white;
+ 
+  padding-right: 15%;
+  padding: 5%;
+  height: 900px;
+  margin-bottom: 0;
+
+}
+
+.input
+{
+  background-color: #40444B;
+}
+
+.divider{
+  width: 1000px;
+  float: left;
+}
+#Chatters
+{
+  background: #2F3136;
+  float:right;
+  color: white;
+  padding-right: 15%;
+  padding: 5%;
+  height: 900px;
+  
+
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+#ChatInputContainer
+{
+  margin-bottom: 10px;
+}
+
+#MessagesContainer
+{
+  height: 900px;
+  color: white;
+}
