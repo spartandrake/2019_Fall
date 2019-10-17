@@ -1,0 +1,15 @@
+Mikael Hinton
+
+// Adding UI semantic React
+npm install --save semantic-ui-react
+
+// Creating new App
+npx create-react-app my-app
+
+// Moment.js
+npm install moment --save
+
+
+
+
+

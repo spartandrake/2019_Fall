@@ -12,15 +12,15 @@ import logo from './To_Do_List.png';
 
 // Maps the items to the list with index
 const List = props => (
-  <ol>
+  <ul>
     {
       // Maps item to correct place in list and shows the list
       props.items.map((item, index) => 
-      <li
-      key={index}>{item}
-      </li>)
+      <li key={index} onClick={() => props.deleteToDo(item.index)}>{item}{index}
+      </li>
+      )
     }
-  </ol>
+  </ul>
 );
 
 // Creates a todo & items list
@@ -50,6 +50,16 @@ class App extends Component {
     this.setState({ todo: event.target.value });
   }
 
+  // deleteToDo deletes item that was clicked on
+  deleteToDo = index => {
+    const filteredItems = this.state.items.filter(item => {
+      return item.index !== index
+    })
+    this.setState({
+      items: filteredItems
+    });
+  }
+
   // Logo with the form that submits the text inputted 
   render() {
     return (
@@ -68,7 +78,7 @@ class App extends Component {
         </form>
 
         {/* List of Items */}
-        <List items={this.state.items}/>
+        <List items={this.state.items}deleteToDo={this.deleteToDo}/>
       </div>
     );
   }
