@@ -73,6 +73,8 @@ const Message =( {currentUser, currentChannel, setMessages, messages} ) =>{
     )
   }
   console.log(messages)
+  // filter messages first and then check length
+  // or we could check if any messages have the current channelname first, and if they dont then we display a no messages element
   return(
     <List>
       {messages.map(message =>{
